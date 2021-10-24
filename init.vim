@@ -23,17 +23,15 @@ call plug#begin('~/.config/nvim/plugged')
 
 "-------------------Load files-----------------
 
-source $HOME\AppData\Local\nvim\base.vim
-source $HOME\AppData\Local\nvim\mappings.vim
-source $HOME\AppData\Local\nvim\coc-config.vim
-source $HOME\AppData\Local\nvim\plugins.vim
-source $HOME\AppData\Local\nvim\language-specific.vim 
-source $HOME\AppData\Local\nvim\theming.vim 
+source $NVIM_CONF_DIR/nvim/base.vim
+source $NVIM_CONF_DIR/nvim/mappings.vim
+source $NVIM_CONF_DIR/nvim/coc-config.vim
+source $NVIM_CONF_DIR/nvim/plugins.vim
+source $NVIM_CONF_DIR/nvim/language-specific.vim 
+source $NVIM_CONF_DIR/nvim/theming.vim 
 
 call plug#end()
 
 " set the colorscheme
-" colorscheme dracula
-" let g:lightline={'colorscheme':'dracula'}
-colorscheme gruvbox
-let g:lightline={'colorscheme':'gruvbox'}
+colorscheme material
+let g:lightline.colorscheme = 'material'

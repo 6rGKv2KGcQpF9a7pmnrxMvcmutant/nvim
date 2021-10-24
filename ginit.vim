@@ -35,7 +35,7 @@ vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>gv
 " FVim settings
 if exists('g:fvim_loaded')
     " good old 'set guifont' compatibility
-    set guifont=Cascadia\ Mono:h12
+    set guifont=Cascadia\ Mono:h14
     " Ctrl-ScrollWheel for zooming in/out
     nnoremap <silent> <C-ScrollWheelUp> :set guifont=+<CR>
     nnoremap <silent> <C-ScrollWheelDown> :set guifont=-<CR>
@@ -44,4 +44,5 @@ if exists('g:fvim_loaded')
     FVimCursorSmoothBlink v:true
     " Title bar tweaks
     FVimCustomTitleBar v:true             " themed with colorscheme
+    FVimBackgroundOpacity 'transparent'
 endif

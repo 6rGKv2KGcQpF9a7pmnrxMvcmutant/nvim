@@ -1,22 +1,19 @@
-
-
-
 " theming.vim
 
-" ------------- [lightline, a statusline/tabline plugin] ------------
+" statusline
 Plug 'itchyny/lightline.vim'
+let g:lightline = {} " so the colorscheme can theme lightline later
 
-" like this so the colorscheme can theme lightline later
-let g:lightline = {}
-
-
-" ------------- [Editor Colorscheme Plugin: darkspace] ------------
 " prerequisites
 set background=dark
 set termguicolors
 
-" install the plugin
-" dracula colorscheme
+" colorscheme plugins
+" to set lightline theme: let g:lightline = { 'colorscheme': 'tender' }
 Plug 'dracula/vim', {'as':'dracula'}
-" gruvbox colorscheme
-Plug 'morhetz/gruvbox', {'as': 'gruvbox'}
+Plug 'morhetz/gruvbox'
+Plug 'jacoborus/tender.vim'
+Plug 'kaicataldo/material.vim', {'branch': 'main'}
+let g:material_theme_style = 'default'
+let g:material_terminal_italics = 1
+
