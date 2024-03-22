@@ -1,5 +1,8 @@
 " mappings.vim
 
+" the infamous remap
+inoremap jk <Esc>
+
 " window movement and control commands
 nnoremap <leader>wh <C-w>h
 nnoremap <leader>wl <C-w>l

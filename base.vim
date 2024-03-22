@@ -20,7 +20,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set scrolloff=8
-set clipboard^=unnamed
+set clipboard^=unnamedplus
 set spell
 set spelllang=en_us
 set fileformat=unix

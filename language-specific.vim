@@ -103,3 +103,6 @@ Plug 'JuliaEditorSupport/julia-vim'
 
 " ##################### [Haskell] ########################
 Plug 'neovimhaskell/haskell-vim'
+
+" ##################### [go] ########################
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
